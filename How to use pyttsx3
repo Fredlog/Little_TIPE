@@ -1,0 +1,37 @@
+import pyttsx3 as ps
+#cria uma instancia 
+engine = ps.init()
+
+#texto para a fala
+# engine.say("fddjafbdajmbah,ab")
+# engine.runAndWait() Esse metodo interrompe a execução até que a fala acima seja convertida para audio, impedidndo que o programa acabe
+
+#Volume, voz, rate 
+#Como definir as propriedades .getPropreties('')
+# print(engine.getProperty('voice'))
+# print(engine.getProperty('volume')) # 0 - 1 
+# print(engine.getProperty('rate'))   #200
+
+voices = engine.getProperty('voices')
+#voice1,voice2,... = engine.getProperty("voices")
+# for voice in voices:
+#     print(voice)
+
+#MUDANDO A VOZ
+# engine.setProperty('voice',voices[1].id)
+# engine.say("Araaaaa! cowboy,o que faz por essas bandas?")
+# engine.runAndWait()
+
+#MUDANDO A VELOCIDADE 
+# engine.setProperty('rate', 150)
+# engine.say("Araaaaa! cowboy,o que faz por essas bandas?")
+# engine.runAndWait()
+
+#MUDANDO O VOLUME
+# engine.setProperty("volume",0.5)
+# engine.say("Araaaaa! cowboy,o que faz por essas bandas?")
+# engine.runAndWait()
+
+#COMO SALVAR UM SPEECH EM UM ARQUIVO 
+# engine.save_to_file("Testando, o que eu posso falar agora?","teste_fala.mp3")
+# engine.runAndWait()
